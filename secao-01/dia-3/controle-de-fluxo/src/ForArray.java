@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ForArray {
 
   public static void main(String[] args) {
@@ -13,6 +15,9 @@ public class ForArray {
 
 // Imprime a lista de chamadas. Note que você pode declarar a variável posição dentro do for!
     int matricula;
+
+    Arrays.stream(alunos).map(aluno -> "Aluno: " + aluno + "\n");
+
     for (int posicao = 0; posicao < totalAlunos; posicao++) {
       matricula = posicao + 1;
       log = "Matricula: " + matricula + " Aluno: " + alunos[posicao] + "\n";
